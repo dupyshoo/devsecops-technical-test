@@ -32,7 +32,7 @@ jobs:
         env:
           SNYK_TOKEN: 4049426c-b67b-46b9-ae04-e103aef206b4
         with:
-          file: terraform/main.tf
+          file: terraform
       - name: Upload result to GitHub Code Scanning
         uses: github/codeql-action/upload-sarif@v2
         with:
